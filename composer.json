@@ -1,0 +1,42 @@
+{
+    "name": "github-user/laravel-my-package",
+    "description": "My Laravel package description",
+    "type": "library",
+    "keywords": [
+        "github-user",
+        "github-user/laravel-my-package",
+        "laravel",
+        "laravel-5-package"
+    ],
+    "homepage": "https://github.com/github-user/laravel-my-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/contracts": "~5.4.0",
+        "illuminate/support": "~5.4.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "Me\\MyPackage\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Me\\MyPackage\\ServiceProviders\\MyPackageServiceProvider"
+            ],
+            "aliases": {
+                "Facade": "Me\\MyPackage\\Facades\\MyPackageFacade"
+            }
+        }
+    }
+}
